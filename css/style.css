@@ -1,14 +1,12 @@
-
 body {
     font-family: sans-serif;
     padding-top: 60px; /* Ajuste este valor para corresponder à altura da barra de navegação */
     margin: 0;
     box-sizing: border-box;
     background-color: #444444;
-    width: 100vw;
-    height: 100vh;
   }
-  .navbar {  
+  
+  .navbar {
     display: flex;
     justify-content: center;
     background-color: #02dd0d; 
@@ -20,8 +18,6 @@ body {
     z-index: 1000; 
     border-radius: 15px; 
   }
-
-}
   
   .navbar ul {
     display: flex;
@@ -47,6 +43,12 @@ body {
     transition: .5s;
     z-index: 1;
     border-radius: 10px; /* Bordas arredondadas dos links */
+  }
+  @media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column; /* Altera a direção para coluna em telas pequenas */
+        align-items: center; /* Alinha os itens ao centro */
+    }
   }
   
   .navbar ul li a:before {
@@ -92,6 +94,7 @@ body {
     transform: scaleY(1);
     opacity: 1;
   }
+
   
   main {
     padding: 20px; 
@@ -158,4 +161,5 @@ body {
     border-radius: 20%;
   }
   
+ 
  
