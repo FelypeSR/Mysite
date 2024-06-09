@@ -1,6 +1,8 @@
-html, body {
-width: 100vw;
-height: 100vh;
+/* Estilos para telas pequenas, como smartphones */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%; /* Define a largura do container para ocupar 100% da largura da tela */
+    }
 body {
     font-family: sans-serif;
     padding-top: 60px; /* Ajuste este valor para corresponder à altura da barra de navegação */
