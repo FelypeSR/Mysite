@@ -44,13 +44,6 @@ body {
     z-index: 1;
     border-radius: 10px; /* Bordas arredondadas dos links */
   }
-  @media only screen and (max-width: 600px) {
-    .navbar {
-        flex-direction: column; /* Altera a direção para coluna em telas pequenas */
-        align-items: center; /* Alinha os itens ao centro */
-    }
-  }
-  
   .navbar ul li a:before {
     content: '';
     position: absolute;
