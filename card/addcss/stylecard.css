@@ -1,0 +1,106 @@
+/* CSS */
+
+/* Importando fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #444;
+    background: linear-gradient(to right bottom, #3767bb 0%, #8f24b9 100%); 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo do contêiner do cartão */
+.movie {
+    max-width: 800px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 5px 20px 10px rgba(0, 0, 0, .2);
+    overflow: hidden;
+}
+
+/* Estilo da parte de imagem do cartão */
+.movie__hero {
+  flex: 0 0 45%;
+}
+
+/* Estilo da imagem do cartão */
+.movie__img {
+    width: 100%;
+    display: block;
+}
+
+/* Estilo do conteúdo do cartão */
+.movie__content {
+    background-color: #fff;
+    flex: 1;
+    padding: 35px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo do preço do cartão */
+.movie__price {
+    background: linear-gradient(to bottom, #00ff15 0%, #000000 100%);
+    flex: 0 0 50px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(0, 255, 106);
+    writing-mode: vertical-lr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo do título do cartão */
+.movie__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo do título principal do cartão */
+.heading__primary {
+    font-size: 16px;
+    margin-right: auto;
+    color: royalblue;
+}
+
+/* Estilo do ícone de fogo */
+.fa-fire {
+    color: rgb(180, 90, 216);
+}
+
+/* Estilo das tags de detalhes do cartão */
+.movie__tag--1 {
+  background-color: #013ca1;
+}
+
+.movie__tag--2 {
+    background-color: #6f2875;
+}
+
+/* Estilo da descrição do cartão */
+.movie__description {
+    font-size: 14px;
+}
+
+.icones{
+    font-size:14px;
+    box-shadow: #444;
+
+}

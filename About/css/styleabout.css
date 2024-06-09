@@ -1,0 +1,131 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 20px;
+    background: linear-gradient(rgb(0, 0, 0), rgb(23, 212, 5),); /* Cor de fundo suave */
+   
+
+}
+
+/* Container principal */
+.container {
+    position: relative;
+    background: #fff;
+    padding: 20px 40px; /* Espaçamento interno para as linhas */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Estilo para títulos */
+h2.questions {
+    font-size: 1.5em;
+    color: #0056b3; /* Cor azul escuro */
+    border-bottom: 2px solid #0056b3; /* Linha embaixo dos títulos */
+    padding-bottom: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+/* Efeito de mudança de cor ao passar o mouse */
+h2.questions:hover {
+    color: #003f7d;
+}
+
+/* Escondendo parágrafos inicialmente */
+p.text {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    line-height: 1.8;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: height 0.3s ease, opacity 0.3s ease;
+}
+
+/* Revelando parágrafos ao passar o mouse sobre a pergunta */
+h2.questions:hover + p.text,
+h2.questions:hover + p.text + p.text,
+h2.questions:hover + p.text + p.text + p.text,
+h2.questions:hover + p.text + p.text + p.text + p.text {
+    height: auto; /* Ajuste automático da altura */
+    opacity: 1;
+}
+
+/* Linhas verticais no fundo */
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        to right,
+        transparent 0%,
+        transparent 5%, /* Ajuste a porcentagem conforme necessário */
+        rgba(0, 0, 0, 0.1) 5%,
+        rgba(0, 0, 0, 0.1) 6%,
+        transparent 6%,
+        transparent 100%
+    );
+    background-size: 40px 100%; /* Espaçamento entre as linhas */
+    z-index: -1; /* Posicionar atrás do conteúdo */
+}
+
+/* Melhorias visuais para links (caso sejam adicionados) */
+a {
+    color: #0056b3;
+    text-decoration: none;
+    border-bottom: 1px solid #0056b3;
+}
+
+a:hover {
+    color: #003f7d;
+    border-bottom: 1px solid #003f7d;
+}
+
+/* Melhorias para responsividade */
+@media (max-width: 600px) {
+    body {
+        padding: 20px 10px;
+    }
+    h2.questions {
+        font-size: 1.3em;
+    }
+    p.text {
+        font-size: 1em;
+    }
+}
+.container {
+    max-width: 800px; /* Define a largura máxima do container */
+    margin: 0 auto; /* Centraliza o container na página */
+}
+
+.questions {
+    border-bottom: 2px solid #000; /* Adiciona uma borda na parte inferior dos títulos */
+    padding-bottom: 10px; 
+}
+
+.text {
+    border: 1px solid #000; 
+    padding: 10px; /* Adiciona um espaço interno entre o texto e a borda */
+    overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse os limites da caixa */
+    margin-bottom: 10px; /* Adiciona um espaço abaixo de cada parágrafo */
+}
+.border_all{
+    border: 1px solid #000; 
+
+
+}
