@@ -5,8 +5,7 @@ body {
     box-sizing: border-box;
     background-color: #444444;
   }
-  
-  .navbar {
+.navbar {
     display: flex;
     justify-content: center;
     background-color: #02dd0d; 
@@ -18,7 +17,6 @@ body {
     z-index: 1000; 
     border-radius: 15px; 
   }
-  
   .navbar ul {
     display: flex;
     margin: 0;
